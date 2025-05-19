@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/global.css">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .calculator {
+            display: flex;
+            height: 100vh;
+            position: fixed;
+            top:100px;
+            right:0;
+            justify-content: flex-end;
+        }
+
+        .calc-box {
+            height: fit-content;
+            padding: 20px 20px;
+            margin-top: 0px;
+            margin-right: 100px;
+            background-color: black;
+            border-radius: 10px;
+            border: 1px solid rgb(103, 187, 8);
+        }
+
+
+        #value {
+            background-color: white;
+            padding: 20px 40px;
+            font-family: monospace;
+            font-size: 20px;
+            transition: 1.5s;
+            border-radius: 10px;
+        }
+
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            font-family: monospace;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(201, 198, 198);
+            transition: 0.5s;
+        }
+
+        #special {
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(103, 187, 8);
+        }
+
+        #value:hover {
+            background-color: rgb(167, 230, 96);
+        }
+
+        .content {
+            width: 60%;
+            display: flex;
+            margin-top: 50px;
+
+        }
+
+        #title {
+            width:40%;
+            margin-top: 100px;
+            color: rgb(10, 227, 10);
+            padding: 10px;
+            font-size: 2em;
+            font-family: cursive;
+        }
+
+        #task-content {
+            margin: auto;
+            color: white;
+            font-size: 2em;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo1.png" alt="logo" height="60px">
+        <h1 style="color: white; font-family: cursive;" >Task</h1>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./task1.html">Task1</a></li>
+            <li><a href="./task2.html">Task2</a></li>
+            <li><a href="./task3.html">Task3</a></li>
+            <li><a href="#" class="active">Task4</a></li>
+        </ul>
+    </header>
+    <h1 id="title">Calculator</h1>
+    <div class="content">
+        <p id="task-content"></p>
+    </div>
+    <div class="calculator">
+        <div class="calc-box">
+            <p id="value">Result:<span id="result"></span></p>
+            <button onclick="update('1')"> 1</button>
+            <button onclick="update('2')"> 2</button>
+            <button onclick="update('3')"> 3</button>
+            <button onclick="update('+')"> +</button><br>
+            <button onclick="update('4')"> 4</button>
+            <button onclick="update('5')"> 5</button>
+            <button onclick="update('6')"> 6</button>
+            <button onclick="update('-')"> -</button><br>
+            <button onclick="update('7')"> 7</button>
+            <button onclick="update('8')"> 8</button>
+            <button onclick="update('9')"> 9</button>
+            <button onclick="update('*')"> *</button><br>
+            <button onclick="update('/')"> /</button>
+            <button onclick="update('0')"> 0</button>
+            <button onclick="answer()"> =</button>
+            <button id="special" onclick="removeLast()">🔙</button>
+        </div>
+    </div>
+    <script src="./task4script.js"></script>
+
+
+
+</body>
+
+</html>

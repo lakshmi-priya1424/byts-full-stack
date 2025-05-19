@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/global.css">
+    <title>Temperature Conversion</title>
+    <style>
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(0, 0, 0)
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+form{
+    box-sizing: border-box;
+    border: 5px solid rgb(7, 193, 7);
+    background-color: rgb(0, 0, 0);
+    max-width: 360px;
+    color:white;
+    margin-right: 200px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 25px 25px;
+    border-radius: 20px;
+}
+   
+#inputTemp{
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 100px;
+    right: 0;
+}
+#submitBtn{
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#submitBtn:hover{
+      transform: scale(1.1);
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#result{
+    font-size: 1.3em;
+    font-family: Arial;
+}
+.content{
+    width: 60%;
+    display: flex;
+    margin-top: 50px;
+   
+}
+#title{
+    margin-top: 100px;
+    color: rgb(10, 227, 10);
+    padding: 10px;
+    font-size:2em;
+    font-family: cursive;
+}
+#task-content {
+    margin: auto;
+    color: white;
+    font-size:2em;
+    font-family: cursive;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/logo1.png" alt="logo" height="60px">
+        <h1 style="color: white; font-family: cursive;" >Task</h1>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./task1.html">Task1</a></li>
+            <li><a href="#" class="active">Task2</a></li>
+            <li><a href="./task3.html">Task3</a></li>
+            <li><a href="./task4.html">Task4</a></li>
+        </ul>
+    </header>
+     <h1 id="title">Temperature Convertor🌞</h1>
+    <div class="content">
+        <p id="task-content"></p>
+    </div>
+    <div class="container">
+    <form>
+        <h1>Temperature Conversion:</h1>
+        <input type="number" id="inputTemp"><br>
+       
+        <input type="radio" id="toFahrenheit" name="parameter">
+        <label for="toFahrenheit">Celsius ➡️ Fahrenheit </label> <br>  <br>
+       
+        <input type="radio" id="toCelsius" name="parameter">
+        <label for="toCelsius"> Fahrenheit  ➡️ Celsius</label><br>  
+
+
+        <button id="submitBtn" type="button" onclick="convert()">Convert</button>
+
+
+        <p id="result">Select a unit</p>
+    </form>
+    </div>
+    <script src="task2script.js"></script>    
+</body>
+</html>
