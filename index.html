@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./images/logo1.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style/global.css">
+    <style>
+        .welcome-anim{
+            animation-name: welcome-anim;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+           
+        }
+        
+         @keyframes welcome-anim {
+            0%{
+                margin-left: -100px;
+            }
+            50%{
+                margin-left:150px;
+            }
+            100%{
+                margin-left: 100px;
+            }
+        } 
+       
+        .welcome{
+            color:rgb(28, 239, 35);
+            margin-left: 100px; 
+            margin-top: 100px;
+            font-family: cursive;
+            font-size: 2rem;
+        }
+        .img{
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top:200px;
+            right:100px;
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/logo1.png" alt="logo" height="60px">
+        <h1 style="color: white; font-family: cursive;" >Task</h1>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="./pages/task1.html">Task1</a></li>
+            <li><a href="./pages/task2.html">Task2</a></li>
+            <li><a href="./pages/task3.html">Task3</a></li>
+            <li><a href="./pages/task4.html">Task4</a></li>
+        </ul>
+    </header>
+    <div class="home-content">
+        <h1 class="welcome welcome-anim">WELCOME!😊 To Task Page</h1>
+    </div>
+    <div class="img">
+        <img src="https://i.pinimg.com/originals/f4/7e/00/f47e0079cc53fda3b4b3a7d6e59d5fdd.gif">
+    </div>
+   
+</body>
+</html>
